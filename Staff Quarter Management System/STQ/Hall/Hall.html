@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>HALL INFO</h1>
+          </div>
+          <div class="panel-body">
+            <form action="Hall.php" method="post">
+              <div class="form-group">
+                <label for="H_ID">Hall ID*</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="H_ID"
+                  name="H_ID"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="H_Name">Hall Name*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="H_Name"
+                  name="H_Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="T_Seat">Total Seat*</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="T_Seat"
+                  name="T_Seat"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="A_Seat">Available Seat*</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="A_Seat"
+                  name="A_Seat"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="N_Student">Nubmer of Student*</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="N_Student"
+                  name="N_Student"
+                  required
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" value="SUBMIT" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <button><a href="DispHall.php" class="btn btn-primary"><b>Back</b></a></button>
+            <small>&copy; Staff Management System</small>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

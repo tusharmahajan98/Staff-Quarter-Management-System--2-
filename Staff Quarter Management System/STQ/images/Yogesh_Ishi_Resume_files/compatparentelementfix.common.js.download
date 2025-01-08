@@ -1,0 +1,1 @@
+function __loadCompat(o){o.Debug=function(){},o.Debug._fail=function(o){throw new Error(o)},o.Debug.writeln=function(o){window.console&&window.console.debug(o)},o.__getNonTextNode=function(o){try{for(;o&&1!=o.nodeType;)o=o.parentNode}catch(n){o=null}return o}}__loadCompat(window);
